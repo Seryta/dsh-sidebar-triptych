@@ -1,0 +1,16 @@
+{
+  "id": "dsh-external/dsh-sidebar-triptych",
+  "version": "0.1.0",
+  "main": "./lib/index.js",
+  "description": "左侧栏三段折叠：功能区（插件/自动化任务/上下文洞察/更多）、工作区、状态区（工作区与底部“更多”之间的用量卡/番茄钟/远程控制）。默认只展开工作区，折叠状态存 Host 并实时同步到所有设备。",
+  "engines": {
+    "dsh": ">=0.2.0-rc.1 <0.3.0"
+  },
+  "contributes": {
+    "tools": [],
+    "skills": []
+  },
+  "client": {
+    "main": "./lib/client.js"
+  }
+}

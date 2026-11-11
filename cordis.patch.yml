@@ -1,0 +1,7 @@
+# dsh-sidebar-triptych bundle patch
+#
+# 纯新增：只 insert 一行宿主侧入口（lib/index.js 只注册状态路由，不注入 DOM）。
+# 视觉与交互全在浏览器半边（lib/client.js）。
+- insert:
+    - id: sidebar-triptych
+      name: dsh-sidebar-triptych

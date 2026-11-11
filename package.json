@@ -1,0 +1,48 @@
+{
+  "name": "dsh-sidebar-triptych",
+  "version": "0.1.0",
+  "description": "把 DSH 左侧栏分成「功能区 / 工作区 / 状态区」三段，各自可折叠；状态存在 Host 侧并跨设备同步。",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "dsh.plugin.json",
+    "README.md"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "engines": {
+    "node": ">=22.6.0",
+    "dsh": ">=0.2.0-rc.1 <0.3.0"
+  },
+  "author": "Saryta",
+  "homepage": "https://github.com/Saryta/dsh-sidebar-triptych#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saryta/dsh-sidebar-triptych.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Saryta/dsh-sidebar-triptych/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "sidebar",
+    "collapse"
+  ]
+}
